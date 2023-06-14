@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto";
+  background-color: #61ffc2;
+  transition: .5s;
+  z-index: -1; }
+
+.center, .display, .frequency {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
+.display {
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 140px;
+  font-size: 50px;
+  z-index: 1; }
+
+.frequency {
+  height: 140px;
+  width: 140px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
+  line-height: 210px;
+  font-size: 16px;
+  z-index: 1;
+  font-family: "Roboto-R"; }
+
+.cnv, .visualization {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0; }
+
+.visualization {
+  filter: url("#goo");
+  z-index: -1; }
+
+/*# sourceMappingURL=style.css.map */
