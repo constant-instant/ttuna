@@ -81,7 +81,8 @@ function anim() {
 	var len = frequencies.length;
 	var start = parseInt(len * .1);
 	var end = parseInt(len * .33);
-	var step = 2 * Math.PI / ( end - start );
+	//var step = 2 * Math.PI / ( end - start );
+	var step = 2 * Math.PI / 150;
 	analyser.getFloatFrequencyData(frequencies);
 	for(var i  = start; i < end; i++) {
 		freq = dim / 4 + frequencies[i];
