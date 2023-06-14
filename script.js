@@ -74,13 +74,10 @@ function anim() {
 	var pitch = WAD.autoCorrelate(timeDomain, context.sampleRate);
 	var noteName = WAD.noteFromPitch( pitch ) || lastNote;
 	// > > >
-
-	sum = 0;
 	
 	//Visualization
 	vis.width = vis.width;
 	var freq, barHeight, barWidth;
-	//var sum = 0;
 	var len = frequencies.length;
 	var start = parseInt(len * .1);
 	var end = parseInt(len * .3);
@@ -96,7 +93,6 @@ function anim() {
 		ctxVis.rotate(step);
 		ctxVis.translate(-ox, -oy); 
 		ctxVis.fillRect(ox, oy, barWidth, barHeight );
-		//sum += barHeight;
 	}
 
 	// Display
