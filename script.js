@@ -80,7 +80,7 @@ function anim() {
 	var freq, barHeight, barWidth;
 	var len = frequencies.length;
 	var start = parseInt(len * .1);
-	var end = parseInt(len * .3);
+	var end = parseInt(len * .33);
 	var step = 2 * Math.PI / ( end - start );
 	analyser.getFloatFrequencyData(frequencies);
 	for(var i  = start; i < end; i++) {
