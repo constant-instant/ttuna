@@ -1,5 +1,9 @@
+@font-face {
+  font-family: "Kashima";
+  src: url("fonts/Kashima.ttf"); }
+
 body {
-  font-family: "Roboto";
+  font-family: "Kashima";
   background-color: #61ffc2;
   transition: .5s;
   z-index: -1; }
@@ -30,7 +34,7 @@ body {
   line-height: 210px;
   font-size: 16px;
   z-index: 1;
-  font-family: "Roboto-R"; }
+  font-family: "Kashima"; }
 
 .cnv, .visualization {
   position: absolute;
