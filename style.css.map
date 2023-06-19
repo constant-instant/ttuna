@@ -1,12 +1,4 @@
 {
-//та компиляция создаст два файла: a.css и a.css.map. Файл карты будет содержать необходимую информацию, позволяющую точно определить конкретное место, где возник стиль.
-//Файл map CSS — это файл формата JSON , который соединяет файл CSS с его исходными файлами,
-/*
-Файл style.css.map используется для отображения соответствия между исходным файлом стилей (style.scss, style.less или другим) 
-и результирующим файлом CSS (style.css). Это полезно при отладке кода стилей, поскольку позволяет показать исходный код, 
-связанный с конечным результатом. Маппинг файлов стилей может быть использован в современных разработческих инструментах,
-таких как отладчики браузеров, чтобы показать точное местоположение исходных файлов стилей, что делает процесс отладки гораздо более эффективным.
-*/
 "version": 3,
 "mappings": "AAUA,UAGC;EAFA,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,6BAA6B;AAGnC,UAGC;EAFA,WAAW,EAAE,UAAU;EACvB,GAAG,EAAE,4BAA4B;AAGlC,UAGC;EAFA,WAAW,EAAE,UAAU;EACvB,GAAG,EAAE,+BAA+B;AAGrC,IAAK;EACJ,WAAW,EAAE,QAAQ;EACrB,gBAAgB,EApBZ,OAAO;EAsBX,UAAU,EAAE,GAAG;EACf,OAAO,EAAE,EAAE;;AAGZ,6BAAQ;EACP,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EAAE,KAAK,EAAE,CAAC;EAChB,MAAM,EAAE,CAAC;EAAE,IAAI,EAAE,CAAC;EAClB,MAAM,EAAE,IAAI;;AAGb,QAAS;EAER,MAAM,EAxCG,KAAM;EAyCf,KAAK,EAzCI,KAAM;EA2Cf,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,WAAW,EA7CF,KAAM;EA8Cf,SAAS,EAAE,IAAQ;EACnB,OAAO,EAAE,CAAC;;AAGX,UAAW;EAEV,MAAM,EApDG,KAAM;EAqDf,KAAK,EArDI,KAAM;EAsDf,MAAM,EAAE,OAAO;EAEf,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,KAAc;EAC3B,SAAS,EAAE,IAAO;EAClB,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,UAAU;;AAGxB,oBAAK;EACJ,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;EAAE,GAAG,EAAE,CAAC;EACjB,IAAI,EAAE,CAAC;EAAE,KAAK,EAAE,CAAC;EAEjB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,CAAC;;AAGX,cAAe;EAEd,MAAM,EAAE,WAAW;EACnB,OAAO,EAAE,EAAE",
 "sources": ["style.scss"],
