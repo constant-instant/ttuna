@@ -1,6 +1,6 @@
 "use strict"
 
-var barColor = "#000";//"#fc89ac";
+var barColor = "#fc89ac";
 var context, source, analyser, 
 	frequencies, barWidth, delta,
 	barHeight, nearPoint = 0, lastNote = 0;
