@@ -15,11 +15,6 @@ var vis = document.getElementById("visualization");
 var ctx = c.getContext("2d");
 var ctxVis = vis.getContext("2d");
 
-
-var angleStep = Math.PI / 9;
-var startAngle = Math.PI / 3;
-var endAngle = 2 * Math.PI / 3;
-
 var mobile, dim, ballRad, ringWidth, 
 	ox, oy, visRadius, fontSize;
 
@@ -124,8 +119,8 @@ function smoothAnim() {
 	function move() {
 		// Cursor ball
 		var step = .01;
-		var arc = ( endAngle - startAngle ) / 2;
-		var theta = Math.PI / 2 - 2 * delta * arc;
+		var pi =  Math.PI / 3;
+		var theta = Math.PI / 2 - delta * pi;
 		var sign = theta - prevTheta;
 		prevTheta += step * sign;
 		var diff = theta - prevTheta;
