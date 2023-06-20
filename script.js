@@ -1,6 +1,5 @@
 "use strict"
 
-// Analyser and animation
 var barColor = "#fc89ac";
 var context, source, analyser, 
 	frequencies, barWidth, delta,
@@ -69,21 +68,14 @@ function tune( stream ) {
 }
 var meanHeight, sum;
 function anim() {
-	//Pitch recognition / note display
+	//Pitch recognition
 	var timeDomain = new Uint8Array(analyser.fftSize);
 	analyser.getByteTimeDomainData(timeDomain);
 
-	// < < <
-	/* The following relies on code from:           *
-	 *	 Web Audio DAW Library by Raphael Serota    *
-	 * Author on GitHub: https://github.com/rserota *		
-	 * GitHub repo: https://github.com/rserota/wad  */
 	var pitch = WAD.autoCorrelate(timeDomain, context.sampleRate);
 	var noteName = WAD.noteFromPitch( pitch ) || lastNote;
-	// > > >
-
-
 	
+
 	//Visualization
 	vis.width = vis.width;
 	var freq, barHeight, barWidth;
