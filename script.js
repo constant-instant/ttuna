@@ -104,12 +104,8 @@ function anim() {
 	window.requestAnimationFrame(anim);
 }
 
+
 function showDelta() {
-	kursor();
-}
-
-
-function kursor() {
 	move();
 	function move() {
 		
