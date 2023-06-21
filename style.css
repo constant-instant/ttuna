@@ -8,7 +8,7 @@ body {
   transition: .5s;
   z-index: -1; }
 
-.center, .display, .frequency {
+ .display, .frequency {
   position: absolute;
   top: 0;
   right: 0;
