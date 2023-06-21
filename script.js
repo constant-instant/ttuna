@@ -14,7 +14,7 @@ var vis = document.getElementById("visualization");
 var ctx = c.getContext("2d");
 var ctxVis = vis.getContext("2d");
 
-var mobile, dim, ballRad, ringWidth, 
+var mobile, less, ballRad, ringWidth, 
 	ox, oy, visRadius, fontSize;
 
 function init() {
@@ -37,12 +37,12 @@ function initValues() {
 	vis.height = h;
 	ox = w / 2;
 	oy = h / 2;
-	dim = Math.min( h, w );
-	ballRad = mobile ? dim * .015 : dim * .0075;
-	meanHeight = mobile ? dim * .25 : dim * .17;
-	visRadius = dim * .003;
+	less = Math.min( h, w );
+	ballRad = mobile ? less * .015 : less * .0075;
+	meanHeight = mobile ? less * .25 : less * .17;
+	visRadius = less * .003;
 	ringWidth = 1;
-	fontSize = mobile ? dim * .05 : dim * .04;
+	fontSize = mobile ? less * .05 : less * .04;
 	display.style.fontSize = fontSize * 2 + "px";
 }
 
@@ -72,11 +72,11 @@ function anim() {
 	var sum = 0;
 	var len = frequencies.length;
 	var start = parseInt(len * .1);
-	var end = parseInt(len * .5);
+	var end = parseInt(len * .3);
 	var step = 2 * Math.PI / ( end - start );
 	analyser.getFloatFrequencyData(frequencies);
 	for(var i  = start; i < end; i++) {
-		freq = dim / 4 + frequencies[i];
+		freq = less / 4 + frequencies[i];
 		freq += mobile ? 100 : 0;
 		barWidth = mobile ? 12 * w / len : 4 * w / len;
 		barHeight = visRadius * freq;
